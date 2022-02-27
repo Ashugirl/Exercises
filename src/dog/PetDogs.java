@@ -4,17 +4,26 @@ public class PetDogs extends Dog{
     private char size = 'M';
     private char coat;
 
+    //constructors
+    public PetDogs(){
+
+    }
+
+    public PetDogs(char size, char coat){
+        setSize(size);
+        setCoat(coat);
+    }
 //getters and setters
 
 
     @Override
     public char getSize() {
-        return size;
+        return super.getSize();
     }
 
     @Override
     public void setSize(char size) {
-        this.size = size;
+        super.setSize(size);
     }
 
     public char getCoat() {

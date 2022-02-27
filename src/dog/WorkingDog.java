@@ -3,8 +3,12 @@ package dog;
 public class WorkingDog extends Dog{
     private char size = 'L';
 
-    public void hunt(){
-        System.out.println("Dog has hunting instincts.");
+    //constructors
+    public WorkingDog(){
+
+    }
+    public WorkingDog(char size){
+        setSize(size);
     }
 
     @Override
@@ -13,17 +17,21 @@ public class WorkingDog extends Dog{
         int times;
 
     }
+    public void hunt(){
+        System.out.println("Dog has hunting instincts.");
+    }
+
 
     //getters and setters
 
     @Override
     public char getSize() {
-        return size;
+        return super.getSize();
     }
 
     @Override
     public void setSize(char size) {
-        this.size = size;
+        super.setSize(size);
     }
 
     }

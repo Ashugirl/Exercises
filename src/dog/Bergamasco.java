@@ -4,9 +4,15 @@ public class Bergamasco extends PetDogs{
     private int runningSpeed = 30;
     private double hairLength = 30;
 
-    public void kiss(){
-        System.out.println("This dog love to give its owner kisses!");
+    //constructors
+    public Bergamasco(){
+
     }
+    public Bergamasco(int runningSpeed, double hairLength){
+        setRunningSpeed(runningSpeed);
+        setHairLength(hairLength);
+    }
+
 
     public int getRunningSpeed() {
         return runningSpeed;
@@ -22,5 +28,9 @@ public class Bergamasco extends PetDogs{
 
     public void setHairLength(double hairLength) {
         this.hairLength = hairLength;
+    }
+
+    public static void kiss(){
+        System.out.println("This dog love to give its owner kisses!");
     }
 }

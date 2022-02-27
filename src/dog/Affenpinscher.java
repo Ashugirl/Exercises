@@ -3,10 +3,18 @@ package dog;
 public class Affenpinscher extends PetDogs {
 
     private String color = "black and brown";
-    private String nickname = "Gunther";
+    private String nickname;
 
-    public void dance(){
-        System.out.println("Dance, Gunther, Dance!");
+    public Affenpinscher(){
+
+    }
+    public Affenpinscher(String color, String nickname){
+        setColor(color);
+        setNickname(nickname);
+    }
+
+    public static void dance(){
+        System.out.println("Dance, doggie!  Dance!");
     }
     public String getColor(){
         return color;

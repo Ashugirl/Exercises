@@ -2,23 +2,22 @@ package dog;
 
 public class Akita extends PetDogs {
     private char gender;
+    private static int count;
 
-    public void layDown() {
-        System.out.println("Puppy, lay down. Puppy, lay down!");
+    {
+        count++;
     }
 
-    public void dance() {
-        System.out.println("Puppy, dance! Puppy, please dance! Why do you never listen to me?");
+//constructors
+    public Akita(){
+
     }
-
-    public void sing() {
-        System.out.println("Puppy, sing! C'mon puppy! Sing! Stubborn dog!");
+    public Akita(char gender){
+        setGender(gender);
     }
-
-
-    @Override
-    public void sit() {
-        System.out.println("Akita only sits when it wants to.");
+    // getters and setters
+    public static int getCount() {
+        return count;
     }
 
     public char getGender() {
@@ -35,4 +34,21 @@ public class Akita extends PetDogs {
         }
 
     }
+    public static void sit() {
+        System.out.println("Akita only sits when it wants to.");
+    }
+
+    public static void layDown() {
+        System.out.println("Puppy, lay down. Puppy, lay down!");
+    }
+
+    public static void dance() {
+        System.out.println("Puppy, dance! Puppy, please dance! Why do you never listen to me?");
+    }
+
+    public static void sing() {
+        System.out.println("Puppy, sing! C'mon puppy! Sing! Stubborn dog!");
+    }
+
+
 }
